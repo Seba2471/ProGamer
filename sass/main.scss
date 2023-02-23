@@ -1,0 +1,100 @@
+@import './_colors.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #444;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 10;
+  a {
+    color: $white-color;
+  }
+
+  a:hover,
+  a span {
+    color: $blue-color;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .active {
+    color: $blue-color;
+  }
+
+  .fa-bars {
+    padding: 10px;
+    color: $white-color;
+  }
+
+  button {
+    border: none;
+  }
+}
+
+header {
+  .hero-img {
+    height: 100vh;
+    position: relative;
+    background-image: url('../assets/img/playstation-gdceff5938_640.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+    .hero-text {
+      height: 100%;
+      color: $white-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      z-index: 5;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    h1 span {
+      color: $blue-color;
+    }
+
+    p span {
+      text-transform: capitalize;
+    }
+
+    .hero-img-shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -10;
+    }
+    .btn-outline-light {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-img {
+    background-image: url(../assets/img/playstation-ge11033734_1920.jpg);
+  }
+}
