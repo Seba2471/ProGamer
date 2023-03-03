@@ -320,6 +320,49 @@ header .fa-chevron-down:hover {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("/assets/img/skyline-1869214_640.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact .contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -5;
+}
+.contact .underline {
+  background-color: #ddd;
+}
+.contact h2 {
+  color: #ddd;
+}
+.contact .contact-us {
+  color: #fff;
+}
+.contact .contact-us h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-us .social-media {
+  font-size: 26px;
+}
+.contact .contact-us .social-media a {
+  color: #fff;
+  padding: 10px;
+}
+.contact .contact-us .social-media a:hover {
+  color: #039dff;
+}
+.contact .contact-us .contact-item {
+  margin-top: 35px;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
@@ -384,5 +427,9 @@ header .fa-chevron-down:hover {
   }
   .team .card .card-body {
     height: 200px;
+  }
+  .contact {
+    position: relative;
+    background-image: url("/assets/img/skyline-1869214_1920.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
