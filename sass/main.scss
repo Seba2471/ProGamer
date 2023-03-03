@@ -205,39 +205,6 @@ header {
   }
 }
 
-@media (min-width: 375px) {
-  header {
-    h1 {
-      font-size: 36px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  header {
-    h1 {
-      font-size: 42px;
-    }
-    p {
-      font-size: 20px;
-    }
-  }
-
-  .aboutus-hero {
-    .aboutus-hero-item {
-      i {
-        font-size: 42px;
-      }
-      about-hero-title {
-        font-size: 28px;
-      }
-    }
-  }
-}
-
 .portfolio {
   .carousel-item {
     position: relative;
@@ -319,6 +286,149 @@ header {
   }
 }
 
+.team {
+  background-image: url('/assets/img/meeting-room-730679_1920.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: block;
+
+  .background-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -5;
+  }
+
+  h2 {
+    color: $light-gray;
+  }
+
+  .card {
+    margin: 0 25px;
+    transition: transform 0.3s;
+    img {
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-title {
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .card-body {
+      height: 280px;
+    }
+
+    .card-footer {
+      text-align: center;
+      i {
+        padding: 10px;
+        color: $main-color;
+      }
+    }
+  }
+
+  .card:hover {
+    transform: scale(0.96);
+  }
+}
+
+.achievements {
+  i {
+    padding: 10px;
+    color: $white-color;
+    font-size: 40px;
+    text-shadow: 0 0 5px #000;
+  }
+
+  .achievements-list {
+    padding: 20px 0;
+  }
+
+  .achievement-title {
+    font-size: 22px;
+  }
+
+  .achievement-text {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 375px) {
+  header {
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .team {
+    .card {
+      .card-body {
+        height: 230px;
+      }
+    }
+  }
+}
+
+@media (min-width: 415px) {
+  .team {
+    .card {
+      .card-body {
+        height: 205px;
+      }
+    }
+  }
+}
+@media (min-width: 500px) {
+  .team {
+    .card {
+      .card-body {
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .aboutus-hero {
+    .aboutus-hero-item {
+      i {
+        font-size: 42px;
+      }
+      about-hero-title {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .team {
+    .card {
+      .card-body {
+        height: 225px;
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
@@ -341,11 +451,27 @@ header {
       font-size: 18px;
     }
   }
+
+  .team {
+    .card {
+      .card-body {
+        height: 245px;
+      }
+    }
+  }
 }
 @media (min-width: 1200px) {
   header {
     .hero-img {
       background-image: url(../assets/img/playstation-ge11033734_1920.jpg);
+    }
+  }
+
+  .team {
+    .card {
+      .card-body {
+        height: 200px;
+      }
     }
   }
 }

@@ -186,28 +186,6 @@ header .fa-chevron-down:hover {
   font-size: 24px;
 }
 
-@media (min-width: 375px) {
-  header h1 {
-    font-size: 36px;
-  }
-  header p {
-    font-size: 16px;
-  }
-}
-@media (min-width: 768px) {
-  header h1 {
-    font-size: 42px;
-  }
-  header p {
-    font-size: 20px;
-  }
-  .aboutus-hero .aboutus-hero-item i {
-    font-size: 42px;
-  }
-  .aboutus-hero .aboutus-hero-item about-hero-title {
-    font-size: 28px;
-  }
-}
 .portfolio .carousel-item {
   position: relative;
   height: 600px;
@@ -277,6 +255,109 @@ header .fa-chevron-down:hover {
   font-weight: 600;
 }
 
+.team {
+  background-image: url("/assets/img/meeting-room-730679_1920.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: block;
+}
+.team .background-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+.team h2 {
+  color: #ddd;
+}
+.team .card {
+  margin: 0 25px;
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card .card-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.team .card .card-body {
+  height: 280px;
+}
+.team .card .card-footer {
+  text-align: center;
+}
+.team .card .card-footer i {
+  padding: 10px;
+  color: #039dff;
+}
+.team .card:hover {
+  transform: scale(0.96);
+}
+
+.achievements i {
+  padding: 10px;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 0 5px #000;
+}
+.achievements .achievements-list {
+  padding: 20px 0;
+}
+.achievements .achievement-title {
+  font-size: 22px;
+}
+.achievements .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .team .card .card-body {
+    height: 230px;
+  }
+}
+@media (min-width: 415px) {
+  .team .card .card-body {
+    height: 205px;
+  }
+}
+@media (min-width: 500px) {
+  .team .card .card-body {
+    height: 180px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  .aboutus-hero .aboutus-hero-item i {
+    font-size: 42px;
+  }
+  .aboutus-hero .aboutus-hero-item about-hero-title {
+    font-size: 28px;
+  }
+  .team .card .card-body {
+    height: 225px;
+  }
+}
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
@@ -293,9 +374,15 @@ header .fa-chevron-down:hover {
   .prices p:first-of-type {
     font-size: 18px;
   }
+  .team .card .card-body {
+    height: 245px;
+  }
 }
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url(../assets/img/playstation-ge11033734_1920.jpg);
+  }
+  .team .card .card-body {
+    height: 200px;
   }
 }/*# sourceMappingURL=main.css.map */
